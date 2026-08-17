@@ -127,6 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+<<<<<<< HEAD
 
 # Project-specific: generated artifacts (regenerate with train.py / visualize.py)
 # best_model.joblib is committed deliberately (see README > Deploying the
@@ -136,3 +137,5 @@ outputs/*.png
 outputs/*.csv
 !models/.gitkeep
 !outputs/.gitkeep
+=======
+>>>>>>> 5708bf9b06aef133400a6bf792f8f4ee108e570c

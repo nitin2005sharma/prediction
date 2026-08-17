@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Core (also declared in pyproject.toml -- kept here too since many
 # recruiters/CI systems still expect a plain requirements.txt)
 pandas>=2.0
@@ -17,3 +18,12 @@ streamlit>=1.30
 #   pip install -e .
 # For the Streamlit demo app too:
 #   pip install -e ".[app]"
+=======
+pandas
+seaborn
+matplotlib
+scikit-learn
+numpy
+
+#to run: pip install -r requirements.txt
+>>>>>>> 5708bf9b06aef133400a6bf792f8f4ee108e570c
