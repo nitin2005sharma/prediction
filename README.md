@@ -6,11 +6,7 @@ from behavioral engagement data -- participation, resource usage, absences
 compared on the same data: Decision Tree, Random Forest, Perceptron,
 Logistic Regression, and a Multi-Layer Perceptron.
 
-**Live demo:** deployed  -- the app is built and tested
-(`src/student_performance/app.py`), deploying it just needs a couple of
-clicks on your own GitHub + Streamlit account (see
-[Deploying the demo](#deploying-the-demo)). Run it locally in the
-meantime with the commands below.
+demo -https://prediction-hum5ph9x9jc24ysttcgxri.streamlit.app/
 
 ## Problem statement
 
@@ -179,21 +175,7 @@ Trained model, leaderboard CSV, and plots are written to `models/` and
 `visualize.py`; the images embedded above are committed separately under
 `docs/images/` so the README renders without a training run).
 
-## Deploying the demo
 
-The app itself is ready (`src/student_performance/app.py`), tested headlessly
-via `tests/test_app.py` using Streamlit's `AppTest` framework. It just needs
-to be pushed to a place that can serve it. Free option, ~2 minutes:
-
-1. Push this repo to your own GitHub account.
-2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with
-   GitHub, click **New app**.
-3. Pick the repo, set the main file path to
-   `src/student_performance/app.py`, deploy.
-4. Streamlit Cloud installs from the root `requirements.txt` automatically
-   (already includes `streamlit`) -- no extra config needed.
-5. Copy the resulting `*.streamlit.app` URL into this README's
-   [Live demo](#student-performance-prediction) line and your resume.
 
 
 
