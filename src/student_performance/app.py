@@ -1,8 +1,4 @@
-"""Interactive demo: predict a student's performance class in the browser.
 
-Run locally with:  streamlit run src/student_performance/app.py
-(or, once installed:  streamlit run app.py  from the project root, see README)
-"""
 
 from __future__ import annotations
 
