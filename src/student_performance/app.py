@@ -34,11 +34,11 @@ def get_reference_data():
 
 
 def main():
-    st.title("📊 Student Performance Predictor")
+    st.title(" Student Performance Predictor")
     st.write(
         "Predicts whether a student's performance class is **Low**, **Medium**, "
         "or **High** from behavioral engagement data -- not grades. Backed by a "
-        "Random Forest classifier, ~78.5% test accuracy, 0.79 macro-F1."
+        
     )
 
     try:
