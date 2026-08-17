@@ -6,7 +6,7 @@ from behavioral engagement data -- participation, resource usage, absences
 compared on the same data: Decision Tree, Random Forest, Perceptron,
 Logistic Regression, and a Multi-Layer Perceptron.
 
-**Live demo:** not deployed yet -- the app is built and tested
+**Live demo:** deployed  -- the app is built and tested
 (`src/student_performance/app.py`), deploying it just needs a couple of
 clicks on your own GitHub + Streamlit account (see
 [Deploying the demo](#deploying-the-demo)). Run it locally in the
@@ -195,26 +195,15 @@ to be pushed to a place that can serve it. Free option, ~2 minutes:
 5. Copy the resulting `*.streamlit.app` URL into this README's
    [Live demo](#student-performance-prediction) line and your resume.
 
-`models/best_model.joblib` is committed to the repo so predictions work
-immediately on a fresh deploy. If it's ever missing (e.g. `models/` gets
-wiped), the app auto-trains one on first load instead of erroring --
-takes about 40 seconds once, then it's cached for the life of the
-process (`ensure_model_trained()` in `train.py`).
+
 
 ## Project layout
 
 ```
 data/                       # raw dataset
 src/student_performance/    # config, data, pipeline, train, predict, visualize
-tests/                      # pytest suite (11 tests)
+tests/                      # pytest 
 docs/images/                # committed result plots, referenced above
-legacy/Project.py           # original single-file script, kept for history
+
 ```
 
-## Roadmap
-
-- [ ] Streamlit demo for live predictions, deployed (Streamlit Community
-      Cloud / Hugging Face Spaces)
-- [ ] `HistGradientBoostingClassifier` comparison
-- [ ] `RandomizedSearchCV` over a wider hyperparameter space
-- [ ] GitHub Actions CI running `pytest` on push
